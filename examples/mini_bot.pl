@@ -30,12 +30,16 @@ sub _start {
 
     $irc->plugin_add(
         'Paster' =>
-            POE::Component::IRC::Plugin::OutputToPastebin->new
+            POE::Component::IRC::Plugin::OutputToPastebin->new(
+                debug => 1,
+            )
     );
 
     $irc->plugin_add(
         'CSSMinifier' =>
-            POE::Component::IRC::Plugin::CSS::Minifier->new
+            POE::Component::IRC::Plugin::CSS::Minifier->new(
+                debug => 1,
+            )
     );
 
     $irc->yield( connect => {} );

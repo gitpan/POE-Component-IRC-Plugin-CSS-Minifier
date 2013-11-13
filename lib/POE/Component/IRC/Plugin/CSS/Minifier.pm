@@ -3,7 +3,7 @@ package POE::Component::IRC::Plugin::CSS::Minifier;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 
 use base 'POE::Component::IRC::Plugin::BasePoCoWrap';
 use POE::Component::CSS::Minifier;
@@ -55,6 +55,8 @@ sub _make_poco_call {
 }
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 

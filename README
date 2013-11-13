@@ -2,8 +2,9 @@ POE-Component-IRC-Plugin-CSS-Minifier
 
 IMPORTANT IMPORTANT IMPORTANT
 
-Unless you are going to manually generate responses into IRC from events or you enjoy
-huge spams, you need to use L<POE::Component::IRC::Plugin::OutputToPastebin> along with
+Unless you are going to manually generate responses into IRC from
+events or you enjoy huge spams, you need to
+use L<POE::Component::IRC::Plugin::OutputToPastebin> along with
 this module.
 
 DESCRIPTION

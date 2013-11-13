@@ -14,7 +14,9 @@ my $builder = Module::Build->new(
         'POE::Component::IRC::Plugin::BasePoCoWrap'     => 0.005,
         'POE::Component::CSS::Minifier'                 => 0.0101,
         'POE::Component::IRC::Plugin::OutputToPastebin' => 0.001,
+        'perl' => '5.006',
     },
+    configure_requires => { 'Module::Build' => 0 },
     add_to_cleanup      => [ 'POE-Component-IRC-Plugin-CSS-Minifier-*' ],
     create_makefile_pl => 'traditional',
 );

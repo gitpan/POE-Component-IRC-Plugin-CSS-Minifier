@@ -1,23 +1,27 @@
 ---
-name: POE-Component-IRC-Plugin-CSS-Minifier
-version: 0.0101
+abstract: "plugin to \"minify\" CSS code"
 author:
   - "Zoffix <'zoffix@cpan.org'>"
-abstract: plugin to "minify" CSS code
+build_requires:
+  Test::More: 0
+configure_requires:
+  Module::Build: 0
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
 license: perl
-resources:
-  license: http://dev.perl.org/licenses/
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: POE-Component-IRC-Plugin-CSS-Minifier
+provides:
+  POE::Component::IRC::Plugin::CSS::Minifier:
+    file: lib/POE/Component/IRC/Plugin/CSS/Minifier.pm
+    version: 0.0102
 requires:
   POE::Component::CSS::Minifier: 0.0101
   POE::Component::IRC::Plugin::BasePoCoWrap: 0.005
   POE::Component::IRC::Plugin::OutputToPastebin: 0.001
-build_requires:
-  Test::More: 0
-provides:
-  POE::Component::IRC::Plugin::CSS::Minifier:
-    file: lib/POE/Component/IRC/Plugin/CSS/Minifier.pm
-    version: 0.0101
-generated_by: Module::Build version 0.2808
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+  perl: 5.006
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.0102
